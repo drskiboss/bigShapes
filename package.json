@@ -34,5 +34,8 @@
     "preview": "astro build && wrangler dev",
     "types": "wrangler types"
   },
+  "engines": {
+    "node": "20.x"
+  },
   "type": "module"
 }
