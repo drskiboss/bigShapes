@@ -42,6 +42,8 @@ body {
   font-size: 20px;
   line-height: 1.7;
 }
+
+
 main {
   width: 720px;
   max-width: calc(100% - 2em);
@@ -151,4 +153,13 @@ hr {
   clip-path: inset(50%);
   /* added line to stop words getting smushed together (as they go onto separate lines and some screen readers do not understand line feeds as a space */
   white-space: nowrap;
+}
+
+
+.logo {
+  width: 50px;   /* Adjust logo width */
+  height: auto;   /* Maintain aspect ratio */
+  display: inline-block;
+  visibility: visible;  /* Ensure it's not hidden */
+  border-radius: 0; 
 }

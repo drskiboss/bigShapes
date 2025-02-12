@@ -5,7 +5,9 @@ import { SITE_TITLE } from '../consts';
 
 <header>
 	<nav>
-		<h2><a href="/">{SITE_TITLE}</a></h2>
+		<a href="/" class="logo-link">
+      <img src="/images/logo.svg" alt="Logo" class="logo" />
+    </a>
 		<div class="internal-links">
 			<HeaderLink href="/">Home</HeaderLink>
 			<HeaderLink href="/blog">Blog</HeaderLink>
@@ -16,7 +18,7 @@ import { SITE_TITLE } from '../consts';
 <style>
 	header {
 		margin: 0;
-		padding: 0 1em;
+		padding: 0px 40px 0px 40px;
 		background: white;
 		box-shadow: 0 2px 8px rgba(var(--black), 5%);
 	}
@@ -35,7 +37,7 @@ import { SITE_TITLE } from '../consts';
 		justify-content: space-between;
 	}
 	nav a {
-		padding: 1em 0.5em;
+		padding: 10px 20px 0px 20px;
 		color: var(--black);
 		border-bottom: 4px solid transparent;
 		text-decoration: none;

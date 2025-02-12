@@ -1,0 +1,46 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
+---
+
+<!doctype html>
+
+
+<html lang="en">
+	<head>
+  <link rel="stylesheet" href="/styles/product-page.css" />
+		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+
+	</head>
+	<body>
+		<Header />
+  <div class=main-product>
+    <div class="product-container">
+      <img class="product-image" src="/images/image1.jpeg" alt="Product Image" />
+      <div class="product-details">
+      <h3>Hermit</h3>
+      <h5>by Sasha Bandi</h5>
+        <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
+        
+
+
+
+<stripe-buy-button
+  buy-button-id="buy_btn_1Qrj5kJIkeoyfqoAaaOG6J0t"
+  publishable-key="pk_live_51QrigHJIkeoyfqoAeZgYXh5Dp2T7zX5qvNY2K4SB8scAI0hzVewtIWXZiUxFgL4X1GEai7dSwRbheV6DJ9s9HCBu00Vqbw5KSc"
+>
+</stripe-buy-button>
+
+
+    </div>
+  </div class=main-product>
+ 
+		<Footer />
+
+<script async
+  src="https://js.stripe.com/v3/buy-button.js">
+</script>
+	</body>
+</html>
